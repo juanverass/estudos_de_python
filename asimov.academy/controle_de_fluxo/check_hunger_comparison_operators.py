@@ -1,4 +1,4 @@
-print('----- INÍCIO -----\n')
+print('----- INÍCIO AULA 1 -----\n')
 
 tenhoFome = input('Estou com fome? (Digite s para sim)');
 tenhoComida = input('Tenho comida em casa? (Digite s para sim)');
@@ -10,5 +10,4 @@ if tenhoFome == 's':
     print('Preparar uma refeição')
     print('Comer a comida')
 
-print('\n----- FIM -----')
-    
+print('\n----- FIM AULA 1 -----')
