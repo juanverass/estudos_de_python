@@ -14,9 +14,12 @@ lista2 = ['Larissa', 21, False]
 elemento_em_comum = False;
 
 for valor1 in lista1:
+   if elemento_em_comum:
+      break
    for valor2 in lista2:
       if valor1 == valor2:
          elemento_em_comum = True;
+         break;
 if elemento_em_comum:
    print(f'As listas {lista1} e {lista2} possuem elementos em comum')
 else:
