@@ -9,7 +9,7 @@ for numero in sequencia:
     soma += numero
 media = soma/len(sequencia);
 print(f'A soma dos números da lista é igual a {soma}')
-print(f'A média dos números da lista é igual a {media}')
+print(f'A média dos números da lista é igual a {media}\n')
 
 # Dado uma sequência de números, calcule o maior valor da sequência.
 # ATENÇÃO: não vale usar a função max()!
@@ -18,7 +18,7 @@ maior_valor = 0;
 for numero in sequencia:
     if numero > maior_valor:
         maior_valor = numero
-print(f'O maior número da lista é {maior_valor}')
+print(f'O maior número da lista é {maior_valor}\n')
 
 # Dado uma lista de palavras, printe todas as palavras.
 # com pelo menos 5 caracteres
