@@ -8,7 +8,6 @@ for lista in valores1:
 print('\n')
 
 #Dado duas listas, printe umas mesagem dizendo se existe algum elemento em comum entre elas ou não
-
 lista1 = ['Juan', 23, False]
 lista2 = ['Larissa', 21, False]
 
@@ -19,6 +18,6 @@ for valor1 in lista1:
       if valor1 == valor2:
          elemento_em_comum = True;
 if elemento_em_comum:
-   print('As listas {lista1} e {lista2} possuem elementos em comum')
+   print(f'As listas {lista1} e {lista2} possuem elementos em comum')
 else:
-   print('As listas {lista1} e {lista2} não possuem elementos em comum')
+   print(f'As listas {lista1} e {lista2} não possuem elementos em comum')
