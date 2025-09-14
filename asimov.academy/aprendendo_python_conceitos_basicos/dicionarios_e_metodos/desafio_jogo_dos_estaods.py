@@ -56,4 +56,4 @@ for estado in capitais:
         break;
 
 porcentagem_acerto = (acertos/quantidade_capitais)*100;
-print(f'Parabéns você acertou {acertos} de {acertos - quantidade_capitais}, uma porcentagem de {porcentagem_acerto} de acertos');
+print(f'Parabéns você acertou {acertos} de {acertos - quantidade_capitais}, uma porcentagem de {porcentagem_acerto}% de acertos');
