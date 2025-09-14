@@ -12,6 +12,7 @@
 # DICA: construa 2 strings com as letras do alfabeto em ordem,
 # um para letra minúsculas e outra para as maiúsculas, e use este
 # string para guiar as substituições.
+import funcao_da_cifra as funcao;
 
 abecedario_minusculo = 'abcdefghijklmnopqrstuvwxyz'
 abecedario_maiusculo = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
@@ -23,17 +24,12 @@ resultado = ''
 
 for caractere in texto:
     if caractere in abecedario_minusculo:
-        pos = abecedario_minusculo.index(caractere)
-        nova_pos = (pos + chave_informada) % 26
-        resultado += abecedario_minusculo[nova_pos]
+        resultado += funcao.gera_cifra(abecedario_minusculo, caractere, chave_informada)
 
     elif caractere in abecedario_maiusculo:
-        pos = abecedario_maiusculo.index(caractere)
-        nova_pos = (pos + chave_informada) % 26
-        resultado += abecedario_maiusculo[nova_pos]
+       resultado += funcao.gera_cifra(abecedario_maiusculo, caractere, chave_informada)
 
     else:
-        # mantém espaços, acentos e pontuação
         resultado += caractere
 
 print('Texto cifrado:', resultado)
